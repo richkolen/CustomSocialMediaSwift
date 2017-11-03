@@ -1,0 +1,639 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61196A211EFEB3370054D06E /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61196A201EFEB3370054D06E /* SettingsTableViewController.swift */; };
+		612937CD1EF5FB95007AB0E5 /* HeaderProfileCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937CC1EF5FB95007AB0E5 /* HeaderProfileCollectionReusableView.swift */; };
+		612937CF1EF721F3007AB0E5 /* MyPostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937CE1EF721F3007AB0E5 /* MyPostApi.swift */; };
+		612937D11EF72BB4007AB0E5 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937D01EF72BB4007AB0E5 /* PhotoCollectionViewCell.swift */; };
+		612937D31EF8170F007AB0E5 /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937D21EF8170F007AB0E5 /* HelperService.swift */; };
+		612937D51EF95742007AB0E5 /* DiscoverUsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937D41EF95742007AB0E5 /* DiscoverUsersViewController.swift */; };
+		612937D71EF9580D007AB0E5 /* DiscoverUsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937D61EF9580D007AB0E5 /* DiscoverUsersTableViewCell.swift */; };
+		612937D91EF96600007AB0E5 /* FollowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937D81EF96600007AB0E5 /* FollowApi.swift */; };
+		612937DB1EF9B1F1007AB0E5 /* FeedApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937DA1EF9B1F1007AB0E5 /* FeedApi.swift */; };
+		612937DD1EFA98B5007AB0E5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937DC1EFA98B5007AB0E5 /* SearchViewController.swift */; };
+		612937DF1EFAC348007AB0E5 /* ProfileUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612937DE1EFAC348007AB0E5 /* ProfileUserViewController.swift */; };
+		614D701A1F03096D0071EC48 /* SinglePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614D70191F03096D0071EC48 /* SinglePostViewController.swift */; };
+		616637331EEB5C7B005511B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 616637321EEB5C7B005511B2 /* Assets.xcassets */; };
+		616637361EEB5C7B005511B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 616637341EEB5C7B005511B2 /* LaunchScreen.storyboard */; };
+		6166373E1EEB5F0F005511B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6166373D1EEB5F0F005511B2 /* GoogleService-Info.plist */; };
+		61A5B5C91EEB642F00739A4F /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5C71EEB642F00739A4F /* Discover.storyboard */; };
+		61A5B5CC1EEB644800739A4F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5CA1EEB644800739A4F /* Profile.storyboard */; };
+		61A5B5CF1EEB645F00739A4F /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5CD1EEB645F00739A4F /* Camera.storyboard */; };
+		61A5B5D21EEB646900739A4F /* Activity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5D01EEB646900739A4F /* Activity.storyboard */; };
+		61A5B5D51EEB648300739A4F /* Start.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5D31EEB648300739A4F /* Start.storyboard */; };
+		61A5B5D81EEB648D00739A4F /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5D61EEB648D00739A4F /* Home.storyboard */; };
+		61A5B5DC1EEB657600739A4F /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5DB1EEB657600739A4F /* Post.swift */; };
+		61A5B5E01EEB661F00739A4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5DF1EEB661F00739A4F /* AppDelegate.swift */; };
+		61A5B5E21EEB663600739A4F /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5E11EEB663600739A4F /* Config.swift */; };
+		61A5B5E41EEB664900739A4F /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5E31EEB664900739A4F /* AuthService.swift */; };
+		61A5B5E61EEB666000739A4F /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5E51EEB666000739A4F /* ActivityViewController.swift */; };
+		61A5B5E81EEB666A00739A4F /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5E71EEB666A00739A4F /* CameraViewController.swift */; };
+		61A5B5EA1EEB66BA00739A4F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5E91EEB66BA00739A4F /* HomeViewController.swift */; };
+		61A5B5EC1EEB66C500739A4F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5EB1EEB66C500739A4F /* SignInViewController.swift */; };
+		61A5B5EE1EEB66D100739A4F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5ED1EEB66D100739A4F /* ProfileViewController.swift */; };
+		61A5B5F01EEB66D800739A4F /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5EF1EEB66D800739A4F /* DiscoverViewController.swift */; };
+		61A5B5F21EEB66E500739A4F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5F11EEB66E500739A4F /* SignUpViewController.swift */; };
+		61A5B5F71EEB675600739A4F /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5F41EEB675600739A4F /* ProgressHUD.bundle */; };
+		61A5B5F81EEB675600739A4F /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5F61EEB675600739A4F /* ProgressHUD.m */; };
+		61A5B5FB1EEB688800739A4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61A5B5F91EEB688800739A4F /* Main.storyboard */; };
+		61A5B5FD1EEDE99300739A4F /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B5FC1EEDE99300739A4F /* HomeTableViewCell.swift */; };
+		61A5B6051EEE07F100739A4F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B6041EEE07F100739A4F /* UserModel.swift */; };
+		61A5B6071EEF3D6500739A4F /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B6061EEF3D6500739A4F /* CommentViewController.swift */; };
+		61A5B6091EEF3DBC00739A4F /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B6081EEF3DBC00739A4F /* CommentTableViewCell.swift */; };
+		61A5B60B1EEF726200739A4F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B60A1EEF726200739A4F /* Comment.swift */; };
+		61A5B60D1EF085EE00739A4F /* PostApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B60C1EF085EE00739A4F /* PostApi.swift */; };
+		61A5B60F1EF08A1300739A4F /* UserApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B60E1EF08A1300739A4F /* UserApi.swift */; };
+		61A5B6111EF08FCD00739A4F /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B6101EF08FCD00739A4F /* Api.swift */; };
+		61A5B6131EF0915600739A4F /* CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B6121EF0915600739A4F /* CommentApi.swift */; };
+		61A5B6151EF0982F00739A4F /* Post_CommentApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5B6141EF0982F00739A4F /* Post_CommentApi.swift */; };
+		8A2AC5DC40F35F065D768A92 /* Pods_Catenaccio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55A5EF689292610905EC2FAB /* Pods_Catenaccio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		221549FE31062148ADE42223 /* Pods-Catenaccio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catenaccio.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Catenaccio/Pods-Catenaccio.debug.xcconfig"; sourceTree = "<group>"; };
+		55A5EF689292610905EC2FAB /* Pods_Catenaccio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Catenaccio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F92E7BBE8BD3FEBA46B198E /* Pods-Catenaccio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Catenaccio.release.xcconfig"; path = "Pods/Target Support Files/Pods-Catenaccio/Pods-Catenaccio.release.xcconfig"; sourceTree = "<group>"; };
+		61196A201EFEB3370054D06E /* SettingsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = Catenaccio/SettingsTableViewController.swift; sourceTree = "<group>"; };
+		612937CC1EF5FB95007AB0E5 /* HeaderProfileCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderProfileCollectionReusableView.swift; sourceTree = "<group>"; };
+		612937CE1EF721F3007AB0E5 /* MyPostApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPostApi.swift; sourceTree = "<group>"; };
+		612937D01EF72BB4007AB0E5 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		612937D21EF8170F007AB0E5 /* HelperService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		612937D41EF95742007AB0E5 /* DiscoverUsersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverUsersViewController.swift; path = Catenaccio/DiscoverUsersViewController.swift; sourceTree = "<group>"; };
+		612937D61EF9580D007AB0E5 /* DiscoverUsersTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverUsersTableViewCell.swift; sourceTree = "<group>"; };
+		612937D81EF96600007AB0E5 /* FollowApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FollowApi.swift; sourceTree = "<group>"; };
+		612937DA1EF9B1F1007AB0E5 /* FeedApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedApi.swift; sourceTree = "<group>"; };
+		612937DC1EFA98B5007AB0E5 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchViewController.swift; path = Catenaccio/SearchViewController.swift; sourceTree = "<group>"; };
+		612937DE1EFAC348007AB0E5 /* ProfileUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileUserViewController.swift; path = Catenaccio/ProfileUserViewController.swift; sourceTree = "<group>"; };
+		614D70191F03096D0071EC48 /* SinglePostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SinglePostViewController.swift; path = Catenaccio/SinglePostViewController.swift; sourceTree = "<group>"; };
+		616637281EEB5C7B005511B2 /* Catenaccio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Catenaccio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		616637321EEB5C7B005511B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		616637351EEB5C7B005511B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		616637371EEB5C7B005511B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6166373D1EEB5F0F005511B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		61A5B5C81EEB642F00739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Discover.storyboard; sourceTree = "<group>"; };
+		61A5B5CB1EEB644800739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		61A5B5CE1EEB645F00739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Camera.storyboard; sourceTree = "<group>"; };
+		61A5B5D11EEB646900739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Activity.storyboard; sourceTree = "<group>"; };
+		61A5B5D41EEB648300739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Start.storyboard; sourceTree = "<group>"; };
+		61A5B5D71EEB648D00739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Home.storyboard; sourceTree = "<group>"; };
+		61A5B5DB1EEB657600739A4F /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		61A5B5DF1EEB661F00739A4F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		61A5B5E11EEB663600739A4F /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		61A5B5E31EEB664900739A4F /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		61A5B5E51EEB666000739A4F /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityViewController.swift; path = Catenaccio/ActivityViewController.swift; sourceTree = "<group>"; };
+		61A5B5E71EEB666A00739A4F /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CameraViewController.swift; path = Catenaccio/CameraViewController.swift; sourceTree = "<group>"; };
+		61A5B5E91EEB66BA00739A4F /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Catenaccio/HomeViewController.swift; sourceTree = "<group>"; };
+		61A5B5EB1EEB66C500739A4F /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = Catenaccio/SignInViewController.swift; sourceTree = "<group>"; };
+		61A5B5ED1EEB66D100739A4F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = Catenaccio/ProfileViewController.swift; sourceTree = "<group>"; };
+		61A5B5EF1EEB66D800739A4F /* DiscoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DiscoverViewController.swift; path = Catenaccio/DiscoverViewController.swift; sourceTree = "<group>"; };
+		61A5B5F11EEB66E500739A4F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = Catenaccio/SignUpViewController.swift; sourceTree = "<group>"; };
+		61A5B5F31EEB675600739A4F /* Catenaccio-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Catenaccio-Bridging-Header.h"; sourceTree = "<group>"; };
+		61A5B5F41EEB675600739A4F /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		61A5B5F51EEB675600739A4F /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		61A5B5F61EEB675600739A4F /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		61A5B5FA1EEB688800739A4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Catenaccio/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61A5B5FC1EEDE99300739A4F /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		61A5B6041EEE07F100739A4F /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		61A5B6061EEF3D6500739A4F /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CommentViewController.swift; path = Catenaccio/CommentViewController.swift; sourceTree = "<group>"; };
+		61A5B6081EEF3DBC00739A4F /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
+		61A5B60A1EEF726200739A4F /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		61A5B60C1EF085EE00739A4F /* PostApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostApi.swift; sourceTree = "<group>"; };
+		61A5B60E1EF08A1300739A4F /* UserApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
+		61A5B6101EF08FCD00739A4F /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		61A5B6121EF0915600739A4F /* CommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentApi.swift; sourceTree = "<group>"; };
+		61A5B6141EF0982F00739A4F /* Post_CommentApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post_CommentApi.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		616637251EEB5C7B005511B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A2AC5DC40F35F065D768A92 /* Pods_Catenaccio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A0D377C23695DB0E2966662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				221549FE31062148ADE42223 /* Pods-Catenaccio.debug.xcconfig */,
+				5F92E7BBE8BD3FEBA46B198E /* Pods-Catenaccio.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6166371F1EEB5C7B005511B2 = {
+			isa = PBXGroup;
+			children = (
+				6166372A1EEB5C7B005511B2 /* Catenaccio */,
+				616637291EEB5C7B005511B2 /* Products */,
+				1A0D377C23695DB0E2966662 /* Pods */,
+				F60AC39A30A422F51045DFFD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		616637291EEB5C7B005511B2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				616637281EEB5C7B005511B2 /* Catenaccio.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6166372A1EEB5C7B005511B2 /* Catenaccio */ = {
+			isa = PBXGroup;
+			children = (
+				61A5B5E31EEB664900739A4F /* AuthService.swift */,
+				612937D21EF8170F007AB0E5 /* HelperService.swift */,
+				61A5B5E11EEB663600739A4F /* Config.swift */,
+				61A5B5DF1EEB661F00739A4F /* AppDelegate.swift */,
+				61A5B60C1EF085EE00739A4F /* PostApi.swift */,
+				612937D81EF96600007AB0E5 /* FollowApi.swift */,
+				612937CE1EF721F3007AB0E5 /* MyPostApi.swift */,
+				612937DA1EF9B1F1007AB0E5 /* FeedApi.swift */,
+				61A5B6121EF0915600739A4F /* CommentApi.swift */,
+				61A5B6141EF0982F00739A4F /* Post_CommentApi.swift */,
+				61A5B60E1EF08A1300739A4F /* UserApi.swift */,
+				61A5B6101EF08FCD00739A4F /* Api.swift */,
+				61A5B5FE1EEDE9C000739A4F /* View */,
+				61A5B5DA1EEB655400739A4F /* Models */,
+				61A5B5D91EEB649C00739A4F /* ViewControllers */,
+				61A5B5C11EEB636200739A4F /* Storyboards */,
+				616637321EEB5C7B005511B2 /* Assets.xcassets */,
+				616637341EEB5C7B005511B2 /* LaunchScreen.storyboard */,
+				616637371EEB5C7B005511B2 /* Info.plist */,
+				6166373D1EEB5F0F005511B2 /* GoogleService-Info.plist */,
+				61A5B5F41EEB675600739A4F /* ProgressHUD.bundle */,
+				61A5B5F51EEB675600739A4F /* ProgressHUD.h */,
+				61A5B5F61EEB675600739A4F /* ProgressHUD.m */,
+				61A5B5F31EEB675600739A4F /* Catenaccio-Bridging-Header.h */,
+			);
+			path = Catenaccio;
+			sourceTree = "<group>";
+		};
+		61A5B5C11EEB636200739A4F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				61A5B5F91EEB688800739A4F /* Main.storyboard */,
+				61A5B5D61EEB648D00739A4F /* Home.storyboard */,
+				61A5B5D31EEB648300739A4F /* Start.storyboard */,
+				61A5B5D01EEB646900739A4F /* Activity.storyboard */,
+				61A5B5CD1EEB645F00739A4F /* Camera.storyboard */,
+				61A5B5CA1EEB644800739A4F /* Profile.storyboard */,
+				61A5B5C71EEB642F00739A4F /* Discover.storyboard */,
+			);
+			name = Storyboards;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		61A5B5D91EEB649C00739A4F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				61A5B5F11EEB66E500739A4F /* SignUpViewController.swift */,
+				614D70191F03096D0071EC48 /* SinglePostViewController.swift */,
+				61A5B5EF1EEB66D800739A4F /* DiscoverViewController.swift */,
+				612937DC1EFA98B5007AB0E5 /* SearchViewController.swift */,
+				61A5B5ED1EEB66D100739A4F /* ProfileViewController.swift */,
+				612937DE1EFAC348007AB0E5 /* ProfileUserViewController.swift */,
+				61A5B6061EEF3D6500739A4F /* CommentViewController.swift */,
+				61A5B5EB1EEB66C500739A4F /* SignInViewController.swift */,
+				61A5B5E91EEB66BA00739A4F /* HomeViewController.swift */,
+				61A5B5E71EEB666A00739A4F /* CameraViewController.swift */,
+				61A5B5E51EEB666000739A4F /* ActivityViewController.swift */,
+				612937D41EF95742007AB0E5 /* DiscoverUsersViewController.swift */,
+				61196A201EFEB3370054D06E /* SettingsTableViewController.swift */,
+			);
+			name = ViewControllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		61A5B5DA1EEB655400739A4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61A5B5DB1EEB657600739A4F /* Post.swift */,
+				61A5B6041EEE07F100739A4F /* UserModel.swift */,
+				61A5B60A1EEF726200739A4F /* Comment.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		61A5B5FE1EEDE9C000739A4F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61A5B5FC1EEDE99300739A4F /* HomeTableViewCell.swift */,
+				612937D01EF72BB4007AB0E5 /* PhotoCollectionViewCell.swift */,
+				612937CC1EF5FB95007AB0E5 /* HeaderProfileCollectionReusableView.swift */,
+				61A5B6081EEF3DBC00739A4F /* CommentTableViewCell.swift */,
+				612937D61EF9580D007AB0E5 /* DiscoverUsersTableViewCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F60AC39A30A422F51045DFFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55A5EF689292610905EC2FAB /* Pods_Catenaccio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		616637271EEB5C7B005511B2 /* Catenaccio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6166373A1EEB5C7B005511B2 /* Build configuration list for PBXNativeTarget "Catenaccio" */;
+			buildPhases = (
+				CE665EE3512DF955C9588A6E /* [CP] Check Pods Manifest.lock */,
+				616637241EEB5C7B005511B2 /* Sources */,
+				616637251EEB5C7B005511B2 /* Frameworks */,
+				616637261EEB5C7B005511B2 /* Resources */,
+				FF43D8DA8B1F3FFCCC13C46E /* [CP] Embed Pods Frameworks */,
+				9CD4D64EB01C7EF96858EF64 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Catenaccio;
+			productName = Catenaccio;
+			productReference = 616637281EEB5C7B005511B2 /* Catenaccio.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		616637201EEB5C7B005511B2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = kolex;
+				TargetAttributes = {
+					616637271EEB5C7B005511B2 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = NH48DS7TPM;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 616637231EEB5C7B005511B2 /* Build configuration list for PBXProject "Catenaccio" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6166371F1EEB5C7B005511B2;
+			productRefGroup = 616637291EEB5C7B005511B2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				616637271EEB5C7B005511B2 /* Catenaccio */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		616637261EEB5C7B005511B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616637361EEB5C7B005511B2 /* LaunchScreen.storyboard in Resources */,
+				61A5B5CF1EEB645F00739A4F /* Camera.storyboard in Resources */,
+				61A5B5C91EEB642F00739A4F /* Discover.storyboard in Resources */,
+				61A5B5D81EEB648D00739A4F /* Home.storyboard in Resources */,
+				61A5B5CC1EEB644800739A4F /* Profile.storyboard in Resources */,
+				61A5B5FB1EEB688800739A4F /* Main.storyboard in Resources */,
+				61A5B5D21EEB646900739A4F /* Activity.storyboard in Resources */,
+				61A5B5D51EEB648300739A4F /* Start.storyboard in Resources */,
+				6166373E1EEB5F0F005511B2 /* GoogleService-Info.plist in Resources */,
+				61A5B5F71EEB675600739A4F /* ProgressHUD.bundle in Resources */,
+				616637331EEB5C7B005511B2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9CD4D64EB01C7EF96858EF64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Catenaccio/Pods-Catenaccio-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE665EE3512DF955C9588A6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FF43D8DA8B1F3FFCCC13C46E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Catenaccio/Pods-Catenaccio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		616637241EEB5C7B005511B2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				612937CD1EF5FB95007AB0E5 /* HeaderProfileCollectionReusableView.swift in Sources */,
+				612937D11EF72BB4007AB0E5 /* PhotoCollectionViewCell.swift in Sources */,
+				61A5B5F21EEB66E500739A4F /* SignUpViewController.swift in Sources */,
+				61A5B5E01EEB661F00739A4F /* AppDelegate.swift in Sources */,
+				61A5B5FD1EEDE99300739A4F /* HomeTableViewCell.swift in Sources */,
+				61A5B5E61EEB666000739A4F /* ActivityViewController.swift in Sources */,
+				61A5B5E21EEB663600739A4F /* Config.swift in Sources */,
+				612937DD1EFA98B5007AB0E5 /* SearchViewController.swift in Sources */,
+				61A5B60B1EEF726200739A4F /* Comment.swift in Sources */,
+				612937DF1EFAC348007AB0E5 /* ProfileUserViewController.swift in Sources */,
+				612937DB1EF9B1F1007AB0E5 /* FeedApi.swift in Sources */,
+				61A5B6131EF0915600739A4F /* CommentApi.swift in Sources */,
+				614D701A1F03096D0071EC48 /* SinglePostViewController.swift in Sources */,
+				61A5B6071EEF3D6500739A4F /* CommentViewController.swift in Sources */,
+				61A5B6151EF0982F00739A4F /* Post_CommentApi.swift in Sources */,
+				61196A211EFEB3370054D06E /* SettingsTableViewController.swift in Sources */,
+				61A5B5E41EEB664900739A4F /* AuthService.swift in Sources */,
+				61A5B5EC1EEB66C500739A4F /* SignInViewController.swift in Sources */,
+				612937CF1EF721F3007AB0E5 /* MyPostApi.swift in Sources */,
+				612937D91EF96600007AB0E5 /* FollowApi.swift in Sources */,
+				61A5B5F81EEB675600739A4F /* ProgressHUD.m in Sources */,
+				612937D31EF8170F007AB0E5 /* HelperService.swift in Sources */,
+				612937D51EF95742007AB0E5 /* DiscoverUsersViewController.swift in Sources */,
+				61A5B6051EEE07F100739A4F /* UserModel.swift in Sources */,
+				61A5B5E81EEB666A00739A4F /* CameraViewController.swift in Sources */,
+				61A5B60D1EF085EE00739A4F /* PostApi.swift in Sources */,
+				61A5B6091EEF3DBC00739A4F /* CommentTableViewCell.swift in Sources */,
+				61A5B5EE1EEB66D100739A4F /* ProfileViewController.swift in Sources */,
+				612937D71EF9580D007AB0E5 /* DiscoverUsersTableViewCell.swift in Sources */,
+				61A5B5EA1EEB66BA00739A4F /* HomeViewController.swift in Sources */,
+				61A5B5DC1EEB657600739A4F /* Post.swift in Sources */,
+				61A5B5F01EEB66D800739A4F /* DiscoverViewController.swift in Sources */,
+				61A5B6111EF08FCD00739A4F /* Api.swift in Sources */,
+				61A5B60F1EF08A1300739A4F /* UserApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		616637341EEB5C7B005511B2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				616637351EEB5C7B005511B2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5C71EEB642F00739A4F /* Discover.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5C81EEB642F00739A4F /* Base */,
+			);
+			name = Discover.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5CA1EEB644800739A4F /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5CB1EEB644800739A4F /* Base */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5CD1EEB645F00739A4F /* Camera.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5CE1EEB645F00739A4F /* Base */,
+			);
+			name = Camera.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5D01EEB646900739A4F /* Activity.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5D11EEB646900739A4F /* Base */,
+			);
+			name = Activity.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5D31EEB648300739A4F /* Start.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5D41EEB648300739A4F /* Base */,
+			);
+			name = Start.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5D61EEB648D00739A4F /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5D71EEB648D00739A4F /* Base */,
+			);
+			name = Home.storyboard;
+			sourceTree = "<group>";
+		};
+		61A5B5F91EEB688800739A4F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				61A5B5FA1EEB688800739A4F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		616637381EEB5C7B005511B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		616637391EEB5C7B005511B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6166373B1EEB5C7B005511B2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 221549FE31062148ADE42223 /* Pods-Catenaccio.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = NH48DS7TPM;
+				INFOPLIST_FILE = Catenaccio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolex.Catenaccio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Catenaccio/Catenaccio-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6166373C1EEB5C7B005511B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F92E7BBE8BD3FEBA46B198E /* Pods-Catenaccio.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = NH48DS7TPM;
+				INFOPLIST_FILE = Catenaccio/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kolex.Catenaccio;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Catenaccio/Catenaccio-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		616637231EEB5C7B005511B2 /* Build configuration list for PBXProject "Catenaccio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				616637381EEB5C7B005511B2 /* Debug */,
+				616637391EEB5C7B005511B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6166373A1EEB5C7B005511B2 /* Build configuration list for PBXNativeTarget "Catenaccio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6166373B1EEB5C7B005511B2 /* Debug */,
+				6166373C1EEB5C7B005511B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 616637201EEB5C7B005511B2 /* Project object */;
+}
